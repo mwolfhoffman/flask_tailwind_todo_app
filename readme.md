@@ -11,7 +11,7 @@ I also am using this project to experiment with Tailwind CSS.
 
 ## Hosted Project:
 
-The hosted project is at: **URL COMING SOON**
+The hosted project is at: https://todo-flask-tailwindcss.herokuapp.com/
 
 <br/>
 
@@ -28,6 +28,8 @@ HTML
 SQLite
 
 SQLAlchemy
+
+Heroku
 
 <br/>
 
