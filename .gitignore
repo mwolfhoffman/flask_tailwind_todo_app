@@ -111,14 +111,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-#virtualenv
-bin
-include
-lib
-.DS_Store
-*.swp
-*~
-
-venv
 
 # End of https://www.gitignore.io/api/flask
