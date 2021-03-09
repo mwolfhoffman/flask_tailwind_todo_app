@@ -60,6 +60,25 @@ def update(id):
        title = "Update Task"
        return render_template('update.html', title=title, task=task)
 
+@app.route('/cron-job-reset')
+def chron_job_reset():
+    tasks = Task.query.order_by(Task.created_at).all()  
+    #1. Delete all Todos
+    for task in tasks:
+        db.session.delete(task)
+        db.session.commit()
+    #2. Create two new default Todos
+    name_one = "Todo 1"
+    new_task_one = Task(name=name_one)
+    db.session.add(new_task_one)
+    db.session.commit()
+    name_two = "Todo 2"
+    new_task_two = Task(name=name_two)
+    db.session.add(new_task_two)
+    db.session.commit()
+    tasks = [new_task_one, new_task_two]
+    #. Re-render home page to show new todos
+    return render_template("home.html", tasks=tasks)  
 
 if __name__ == "__main__":
    app.run(debug=True)

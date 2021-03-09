@@ -15,6 +15,12 @@ The hosted project is at: https://todo-flask-tailwindcss.herokuapp.com/
 
 <br/>
 
+## Cron Job:
+
+I haven't added any authentication to this application yet. It is really just an experiment to get my feet wet with Flask and using Python for web apps. 
+
+To limit the risk of tons of todos adding up in the UI and DB, I created a cron job that runs on [cron-jobs.org] every 5 minutes to reset the Todos. 
+
 ## Complete Stack:
 
 Flask 
@@ -30,6 +36,8 @@ SQLite
 SQLAlchemy
 
 Heroku
+
+Cron-jobs.org
 
 <br/>
 
