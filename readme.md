@@ -45,10 +45,11 @@ Cron-jobs.org
 
 ```
 git clone https://github.com/mwolfhoffman/flask_tailwind_todo_app.git
-
-pip install
-
-python app.py -- setup
+cd flask_tailwind_todo_app
+virtualenv --no-site-packages venv
+venv/bin/activate (Mac/Linux)
+venv/scripts/activate (Windows)
+pip install -r requirements.txt
 
 pthon app.py
 ```
